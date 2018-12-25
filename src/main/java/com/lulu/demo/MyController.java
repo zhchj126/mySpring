@@ -16,9 +16,5 @@ public class MyController {
         myService.say("hello ioc");
     }
 
-    public static void main(String[] args) {
-        ApplicationContext context = new AnnotationApplicationContext("applicationContext.properties");
-        MyController controller = context.getBean("com.lulu.demo.MyController", MyController.class);
-        controller.test();
-    }
+
 }
